@@ -4,6 +4,7 @@ require("keybinds.navigation")
 require("keybinds.window")
 require("keybinds.media")
 require("keybinds.screen")
+require("keybinds.through_sub")
 
 hl.bind(ctrl_ .. "f3", hl.dsp.exec_cmd("hyprctl reload"))
 hl.bind(ctrl_ .. alt_ .. "XF86Tools", hl.dsp.exit(), { locked = true, long_press = true })
