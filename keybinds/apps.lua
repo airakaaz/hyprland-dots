@@ -1,0 +1,8 @@
+hl.bind(mainMod_ .. "RETURN", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod_ .. shift_ .. "RETURN", hl.dsp.exec_cmd("kitty --single-instance"))
+hl.bind(mainMod_ .. "R", hl.dsp.exec_cmd("zen-browser"))
+hl.bind(mainMod_ .. "B", hl.dsp.exec_cmd("pypr toggle btop"))
+hl.bind(mainMod_ .. "E", hl.dsp.exec_cmd("thunar"))
+hl.bind(mainMod_ .. alt_ .. "E", hl.dsp.exec_cmd("kitty spf"))
+hl.bind(mainMod_ .. ctrl_ .. "E", hl.dsp.exec_cmd("dolphin"))
+hl.bind(mainMod_ .. alt_ .. "RETURN", hl.dsp.exec_cmd("pypr toggle term"))
