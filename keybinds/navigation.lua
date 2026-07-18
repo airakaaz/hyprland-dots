@@ -44,7 +44,7 @@ hl.bind(alt_ .. dir.l2, hl.dsp.window.move({ workspace = "-1" }), { repeating = 
 
 local function goToWs(i)
 	return function()
-		local grp = hl.get_active_workspace().id // 10
+		local grp = (hl.get_active_workspace().id - 1) // 10
 		hl.dispatch(hl.dsp.focus({ workspace = grp * 10 + i }))
 	end
 end
@@ -58,7 +58,7 @@ end
 
 local function moveToWs(i)
 	return function()
-		local grp = hl.get_active_workspace().id // 10
+		local grp = (hl.get_active_workspace().id - 1) // 10
 		hl.dispatch(hl.dsp.window.move({ workspace = grp * 10 + i }))
 	end
 end
